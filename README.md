@@ -58,7 +58,7 @@ const FLAGGED = 4;
 function getFlaggedList(list: Cell[]): Cell[] {
     const flaggedListRet: Cell[] = [];
     for (let i: number = 0; i < list.length; i ++) {
-        if (list[i].status === FLAGGED) {
+        if (list[i].isFlagged()) {
             flaggedListRet.push(list[i]);
         }
     }
